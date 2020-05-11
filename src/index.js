@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom';
 
 
 ReactDOM.render(  
-  <h1>Chnadan Vishwakarma</h1>, //this is jSx not a html//
-
-  document.getElementById('root')
+  <div>
+  <h1>Chnadan Vishwakarma</h1>
+  <p>Kaha dikhana hai</p>
+  <h2>Please subscribe my channel</h2>
+  </div>,
+   document.getElementById('root')
 );
 
