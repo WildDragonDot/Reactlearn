@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import './index.css';
 
 const fname="Chandan";
 const lname="Vishwakarma";
@@ -13,14 +14,15 @@ const img5="https://picsum.photos/600/300";
 
 ReactDom.render(
   <React.Fragment>
-    <h1 contentEditable="true">My name is {`${fname} ${lname}`}</h1>
-    <p>Current Date is = {currdate}</p> 
-    <p>Current Time is = {currtime}</p>    
+    <h1 className="heading"> {`${fname} ${lname}`}</h1>
+    {/* <p>Current Date is = {currdate}</p> 
+    <p>Current Time is = {currtime}</p>     */}
+    <div className="imgdiv">
     <img alt="RandomImages" src={img1}/>
     <img alt="RandomImages" src={img2}/>
     <img alt="RandomImages" src={img3}/>
     <img alt="RandomImages" src={img4}/>
-    <img alt="RandomImages" src={img5}/>
+    <img alt="RandomImages" src={img5}/></div>
   </React.Fragment>,
   document.getElementById('root')
 );
