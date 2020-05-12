@@ -1,14 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDom from 'react-dom';
 
+const fname="Chandan";
+const lname="Vishwakarma";
+const currdate=new Date().toLocaleDateString();
+const currtime=new Date().toLocaleTimeString();
 
-ReactDOM.render(  
+ReactDom.render(
   <React.Fragment>
-  <h1>Chandan Vishwakarma</h1>
-  <p>Please like and share</p>
-  <h2>I am don and I am not a terorist</h2>
-  <h3>I am the best</h3>
+    <h1>My name is {`${fname} ${lname}`}</h1>
+    <p>Current Date is = {currdate}</p> 
+    <p>Current Time is = {currtime}</p>    
   </React.Fragment>,
   document.getElementById('root')
 );
-
