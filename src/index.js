@@ -12,15 +12,6 @@ const img3="https://picsum.photos/400/300";
 const img4="https://picsum.photos/500/300";
 const img5="https://picsum.photos/600/300";
 
-<<<<<<< HEAD
-ReactDOM.render(  
-  <div>
-  <h1>Chnadan Vishwakarma</h1>
-  <p>Kaha dikhana hai</p>
-  <h2>Please subscribe my channel</h2>
-  </div>,
-   document.getElementById('root')
-=======
 ReactDom.render(
   <React.Fragment>
     <h1 className="heading"> {`${fname} ${lname}`}</h1>
@@ -34,5 +25,4 @@ ReactDom.render(
     <img alt="RandomImages" src={img5}/></div>
   </React.Fragment>,
   document.getElementById('root')
->>>>>>> master2
 );
