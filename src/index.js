@@ -4,13 +4,8 @@ import './index.css';
 
 
 let greeting = '';
-const cssStyle={
-  
+const cssStyle={  
 };
-const beauty={
-  textAlign:'center',
-fontFamily:'Arial'
-}
 
 let curDate = new Date();
 curDate=curDate.getHours();
@@ -30,7 +25,8 @@ else{
 ReactDom.render(
   <React.Fragment>
  
-<h1 style={beauty}>Hello sir, {greeting}</h1>
+ <div>
+<h1 className="chan">Hello sir, <span style={cssStyle}>{greeting}</span></h1></div>
 
   </React.Fragment>,
   document.getElementById('root')
