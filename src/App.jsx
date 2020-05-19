@@ -1,34 +1,11 @@
-import React from 'react';
-import "./App.css";
-
-function App(){
-let currDate=new Date();
-currDate=currDate.getHours();
-let greeting="";
-const cssStyle={};
-if(currDate>1 && currDate<12){
-    greeting="Good Morning";
-    cssStyle.color="#00b894";
-}
-else if(currDate>=12 && currDate <20){
-greeting ="Good Afternoon";
-cssStyle.color="orange";
-
-}
-else if(currDate >=20 && currDate <=24)
- {
-    greeting="Good Night";
-    cssStyle.color="black";
+const youtuber="Thapa Technical";
+const pro="Hello chandan ji";
+const aloo="Hello";
+let names="";
+function myNames(){
+    return (names="Chandan Vishwakarma");
 }
 
+export default youtuber;
+export {pro,aloo,myNames};
 
-    return(
-    <><div>
-        <h1>
-            Hello sir, <span style={cssStyle}>{greeting}</span>
-        </h1>
-    </div>
-    </>
-    );
-}
-export default App;

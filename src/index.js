@@ -1,11 +1,17 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import App from './App';
-import './index.css';
+// import youtuber , { pro,aloo,myNames} from './App';
+import * as ques from "./App";
 
 ReactDom.render(
   <>
-  <App/> 
+  <ol>
+    <li>Chandan</li>
+    <li>{ques.youtuber}</li>
+    <li>{ques.pro}</li>
+    <li>{ques.aloo}</li> 
+    <li>{ques.myNames()}</li>
+  </ol>
   </>,
   document.getElementById('root')
-);
+  );
