@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-// import youtuber , { pro,aloo,myNames} from './App';
+ import youtuber  from './App';
 import * as ques from "./App";
 
 ReactDom.render(
   <>
   <ol>
     <li>Chandan</li>
-    <li>{ques.youtuber}</li>
+    <li>{youtuber}</li>
     <li>{ques.pro}</li>
     <li>{ques.aloo}</li> 
     <li>{ques.myNames()}</li>
