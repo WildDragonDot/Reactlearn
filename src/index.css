@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #d2dbdd;
+}
+.heading_style{
+    padding: 30px;
+    text-align: center;
+    font-family: "Raleway",sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    background-color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 30p;
+}
+.slot_inner{
+        text-align: center;
+        align-items: center;
+        
+        
+}
+.slotMachine{
+border: 1px solid;
+padding: 20px;
+align-content: center;
+}

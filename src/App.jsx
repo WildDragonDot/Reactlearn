@@ -1,11 +1,23 @@
-const youtuber="Thapa Technical";
-const pro="Hello chandan ji";
-const aloo="Hello";
-let names="";
-function myNames(){
-    return (names="Chandan Vishwakarma");
+import React from 'react';
+import './index.css';
+import SlotM from './SlotM';
+
+const App=()=>{
+    return (<>
+        <h1 className="heading_style">🎰 Welcome to <span>Slot Machine </span>🎰</h1>
+        <div className='slotMachine'> 
+        <SlotM x='🍊' y='😄' z='🎅'/>
+        <hr/>
+        <SlotM x='😄' y='😄' z='😄'/>
+        <hr/>
+        <SlotM x='🍌' y=' 🍎 ' z='🎅'/>
+        <hr/>
+        <SlotM x='🐈' y='🐈' z='🐈'/>
+        </div>
+       
+
+    </>)
+
 }
 
-export default youtuber;
-export {pro,aloo,myNames};
-
+export default App;
