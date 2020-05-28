@@ -1,23 +1,21 @@
-import React from 'react';
-import './index.css';
-import SlotM from './SlotM';
+import React, { useState } from 'react';
+
+
 
 const App=()=>{
-    return (<>
-        <h1 className="heading_style">🎰 Welcome to <span>Slot Machine </span>🎰</h1>
-        <div className='slotMachine'> 
-        <SlotM x='🍊' y='😄' z='🎅'/>
-        <hr/>
-        <SlotM x='😄' y='😄' z='😄'/>
-        <hr/>
-        <SlotM x='🍌' y=' 🍎 ' z='🎅'/>
-        <hr/>
-        <SlotM x='🐈' y='🐈' z='🐈'/>
-        </div>
-       
+     
+//  let state=useState();
+let [count,setCount]=useState(0);
 
-    </>)
-
+    const IncNum=()=>{     
+        setCount(count + 1);           
+    };
+    
+return(
+    <>
+        <h1>{count}</h1>
+        <button onClick={IncNum}>Click Me</button>
+    </>
+);
 }
-
 export default App;
